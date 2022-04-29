@@ -6,8 +6,9 @@ const author={
   id:'asdsad323',
   name:'Ahmet',
   surname:'Yıldız',
-  age:34
-}
+  age:34,
+};
+
 const books = {
   id: "asd676asd",
   title: "The Awakening",
@@ -21,7 +22,7 @@ const typeDefs = gql`
     name: String!
     surname: String
     age: Int
-    books:
+    books:[Book!]
   }
   type Book {
     id: ID!
