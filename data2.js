@@ -2,10 +2,12 @@ const users = [
     {
       id: "1",
       fullName: "Özcan Yüreklioğlu",
+      age: 26
     },
     {
       id: "2",
       fullName: "Ahmet Günal",
+      ag:35
     },
   ];
   
