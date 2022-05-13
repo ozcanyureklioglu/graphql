@@ -24,7 +24,7 @@ const users = [
     },
     {
       id: "3",
-      title: "Ahmet Günal'ın gönderisi",
+      title: "Ahmet'in gönderisi",
       user_id: "2",
     },
   ];

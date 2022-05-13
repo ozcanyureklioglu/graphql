@@ -1,0 +1,27 @@
+
+
+type Comment {
+    id: ID!
+    text: String!
+    post_id: ID!
+    user: User!
+    post: Post!
+}
+type Query {
+   
+    # Post
+    posts: [Post!]!
+    post(id: ID!): Post!
+    # Comment
+    comments: [Comment!]!
+    comment(id: ID!): Comment!
+}
+
+
+
+
+type DeleteAll {
+    count: Int!
+}
+
+
