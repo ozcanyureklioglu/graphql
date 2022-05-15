@@ -4,10 +4,12 @@ type Post {
     title: String!
     user_id: ID!
     user: User!
+    description: String
     comments: [Comment!]!
 }
 input createPost {
     title: String!
+    description: String
     user_id: ID!
 }
 input updatePost {
