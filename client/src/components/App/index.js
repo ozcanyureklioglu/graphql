@@ -12,6 +12,7 @@ import {
 //pages
 import Home from "../../pages/Home/index";
 import NewPost from "../../pages/NewPost/index";
+import Post from "../../pages/Post";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <div className={style.content}>
             <Switch>
               <Route path="/newpost" component={NewPost} />
+              <Route path="/post/:id" component={Post} />
               <Route path="/" component={Home} />
             </Switch>
           </div>
