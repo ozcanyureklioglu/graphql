@@ -5,6 +5,7 @@ type Post {
     user_id: ID!
     user: User!
     description: String
+    cover: String
     comments: [Comment!]!
 }
 input createPost {
