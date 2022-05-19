@@ -12,3 +12,13 @@ query GetPosts {
   }
 }
 `;
+
+export const POST_SUBSCRIPTION = gql`
+subscription{
+  postCreated {
+    id
+    title
+    user_name
+  }
+}
+`;

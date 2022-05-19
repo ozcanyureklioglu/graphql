@@ -3,6 +3,7 @@ import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { Image } from "antd";
 import { GET_POST_BY_ID } from "./queries.js";
+import Comments from './Comments.js';
 
 function Post() {
   const { id } = useParams();
@@ -28,6 +29,7 @@ function Post() {
       <Image
         src={post.cover}
       />
+      <Comments post_id={id} />
     </div>
   );
 }
